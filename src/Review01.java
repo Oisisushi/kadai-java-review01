@@ -2,20 +2,21 @@
 public class Review01 {
 
     public static void main(String[] args) {
-        /*ここでは商品の税抜き金額の変数定義とtaxメソッドの呼び出し、
-         そして戻り値とその合計金額を表示するコードを書く*/
         int price;
-        //ここに税抜き額を記入
+        //ここに税抜き額を記入する
         price = 1500;
+
         int result = consumptionTax(price);
-        System.out.println(result + price);
+        System.out.println
+        (price + "円の商品の税込み価格は" + (result + price) + "円（消費税は" + result + "円）です。");
 
     }
 
     public static int consumptionTax(int price) {
-        //こっちでは商品代金を引数に、税額を戻り値にするコードを書く
-        //ここに税率を整数で入力
-        int tax = 10;
+        int tax;
+        //ここに税率を整数で入力する
+        tax = 10;
+
         int result = ((int)(price * ((double)tax / 100)));
         return result;
     }
