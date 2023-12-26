@@ -6,13 +6,13 @@ public class Review01 {
         //ここに税抜き額を記入する
         price = 1500;
 
-        int result = consumptionTax(price);
+        int result = tax(price);
         System.out.println
         (price + "円の商品の税込み価格は" + (result + price) + "円（消費税は" + result + "円）です。");
 
     }
 
-    public static int consumptionTax(int price) {
+    public static int tax(int price) {
         int tax;
         //ここに税率を整数で入力する
         tax = 10;
