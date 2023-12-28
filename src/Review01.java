@@ -8,7 +8,7 @@ public class Review01 {
 
         int result = tax(price);
         System.out.println
-        (price + "円の商品の税込み価格は" + (result + price) + "円（消費税は" + result + "円）です。");
+        (price + "円の商品の税込価格は" + (result + price) + "円（消費税は" + result + "円）です。");
 
     }
 
